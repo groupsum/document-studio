@@ -1,1 +1,1 @@
-Docmaker SDK is a Groupsum component package.
+Groupsum Docmaker SDK is a Groupsum component package.

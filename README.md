@@ -1,4 +1,4 @@
-# Docmaker SDK
+# Groupsum Docmaker SDK
 
 SSOT-governed Groupsum workspace for the `@groupsum/docmaker-sdk` React package.
 
