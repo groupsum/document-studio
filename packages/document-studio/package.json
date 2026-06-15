@@ -4,6 +4,10 @@
   "description": "Groupsum Document Studio React component package.",
   "type": "module",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groupsum/document-studio"
+  },
   "sideEffects": [
     "**/*.css"
   ],
