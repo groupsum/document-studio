@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  packages/docmaker-sdk:
+  packages/document-studio:
     dependencies:
       '@monaco-editor/react':
         specifier: ^4.7.0

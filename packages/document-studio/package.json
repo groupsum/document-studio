@@ -1,7 +1,7 @@
 {
-  "name": "@groupsum/docmaker-sdk",
+  "name": "@groupsum/document-studio",
   "version": "0.1.0",
-  "description": "Groupsum Docmaker SDK React component package.",
+  "description": "Groupsum Document Studio React component package.",
   "type": "module",
   "license": "UNLICENSED",
   "sideEffects": [
@@ -13,7 +13,7 @@
   ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
-  "style": "./dist/docmaker-sdk.css",
+  "style": "./dist/document-studio.css",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
@@ -22,7 +22,7 @@
       "require": "./dist/index.umd.js"
     },
     "./style.css": {
-      "default": "./dist/docmaker-sdk.css"
+      "default": "./dist/document-studio.css"
     }
   },
   "scripts": {

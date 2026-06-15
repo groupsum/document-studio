@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
-import { usePDFHub } from '../usePDFHub';
+import { useDocumentStudio } from '../useDocumentStudio';
 
-describe('usePDFHub Hook', () => {
+describe('useDocumentStudio Hook', () => {
   it('initializes with default structure', () => {
-    const { result } = renderHook(() => usePDFHub([]));
+    const { result } = renderHook(() => useDocumentStudio([]));
     
     expect(result.current.files).toEqual([]);
     expect(result.current.activeFileId).toBeNull();
@@ -13,7 +13,7 @@ describe('usePDFHub Hook', () => {
   });
 
   it('can add and remove custom PDF form fields', () => {
-    const { result } = renderHook(() => usePDFHub([]));
+    const { result } = renderHook(() => useDocumentStudio([]));
     
     act(() => {
       result.current.addField('text');
@@ -38,7 +38,7 @@ describe('usePDFHub Hook', () => {
   });
 
   it('handles field coordinate positional updates', () => {
-    const { result } = renderHook(() => usePDFHub([]));
+    const { result } = renderHook(() => useDocumentStudio([]));
     
     act(() => {
       result.current.addField('signature');

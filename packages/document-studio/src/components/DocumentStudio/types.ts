@@ -44,7 +44,7 @@ export type DocumentState = {
   fields: FormField[];
 };
 
-export interface PDFHubProps {
+export interface DocumentStudioProps {
   initialFiles?: FileItem[];
   theme?: 'light' | 'dark' | 'system';
   onFileSave?: (file: FileItem) => void;

@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'GroupsumDocmakerSDK',
+      name: 'GroupsumDocument StudioSDK',
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {

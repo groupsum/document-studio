@@ -1,11 +1,11 @@
 import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { PDFHub } from '../PDFHub';
+import { DocumentStudio } from '../DocumentStudio';
 
-describe('PDFHub Component', () => {
+describe('DocumentStudio Component', () => {
   it('renders standard builder as main view', () => {
-    render(<PDFHub />);
+    render(<DocumentStudio />);
     
     // Check live preview canvas is shown
     expect(screen.getByRole('region', { name: /Document Live Preview Canvas/i })).toBeDefined();
@@ -15,7 +15,7 @@ describe('PDFHub Component', () => {
   });
 
   it('provides accessible field injection tools', () => {
-    render(<PDFHub />);
+    render(<DocumentStudio />);
     
     const addLabelBtn = screen.getAllByRole('button', { name: /Add Label Field/i })[0];
     expect(addLabelBtn).not.toBeNull();

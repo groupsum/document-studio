@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { FileItem, DocumentState, FormField, FormFieldType } from './types';
 
-export function usePDFHub(initialFiles: FileItem[] = [], onAction?: (action: any) => void) {
+export function useDocumentStudio(initialFiles: FileItem[] = [], onAction?: (action: any) => void) {
   const [files, setFiles] = useState<FileItem[]>(initialFiles);
   const [activeFileId, setActiveFileId] = useState<string | null>(null);
   

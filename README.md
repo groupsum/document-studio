@@ -1,12 +1,12 @@
-# Groupsum Docmaker SDK
+# Document Studio
 
-SSOT-governed Groupsum workspace for the `@groupsum/docmaker-sdk` React package.
+SSOT-governed Groupsum workspace for the `@groupsum/document-studio` React package.
 
 ## Workspace
 
 - Python workspace: `uv` with `ssot-registry` in the dev dependency group.
 - JavaScript workspace: `pnpm` with packages under `packages/*`.
-- Component package: `packages/docmaker-sdk`.
+- Component package: `packages/document-studio`.
 
 ## Commands
 

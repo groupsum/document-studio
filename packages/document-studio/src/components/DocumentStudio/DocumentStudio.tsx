@@ -1,11 +1,11 @@
-import { usePDFHub } from './usePDFHub';
-import { PDFHubProps } from './types';
+import { useDocumentStudio } from './useDocumentStudio';
+import { DocumentStudioProps } from './types';
 import { PDFViewer } from './PDFViewer';
 import { DocumentBuilder } from './DocumentBuilder';
 import { cn } from '../../lib/utils';
 
-export function PDFHub({ initialFiles = [], theme = 'system', onAction, className }: PDFHubProps) {
-  const hub = usePDFHub(initialFiles, onAction);
+export function DocumentStudio({ initialFiles = [], theme = 'system', onAction, className }: DocumentStudioProps) {
+  const hub = useDocumentStudio(initialFiles, onAction);
 
   return (
     <div className={cn(

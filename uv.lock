@@ -3,7 +3,7 @@ revision = 1
 requires-python = ">=3.10"
 
 [[package]]
-name = "groupsum-docmaker-sdk-workspace"
+name = "document-studio-workspace"
 version = "0.1.0"
 source = { virtual = "." }
 

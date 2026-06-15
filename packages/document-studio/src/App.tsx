@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { PDFHub } from './components/PDFHub';
+import { DocumentStudio } from './components/DocumentStudio';
 
 export default function App() {
   const [logs, setLogs] = useState<{ id: string; time: string; type: string; payload: any }[]>([]);
@@ -38,7 +38,7 @@ export default function App() {
             </svg>
           </div>
           <div>
-            <h1 className="text-sm font-semibold text-white tracking-wide">React PDF Hub <span className="text-[10px] text-indigo-400 ml-2 border border-indigo-500/20 px-1.5 py-0.5 rounded uppercase font-bold">SDK Showcase</span></h1>
+            <h1 className="text-sm font-semibold text-white tracking-wide">React Document Studio <span className="text-[10px] text-indigo-400 ml-2 border border-indigo-500/20 px-1.5 py-0.5 rounded uppercase font-bold">SDK Showcase</span></h1>
           </div>
         </div>
 
@@ -85,7 +85,7 @@ export default function App() {
                     Usage Guide
                   </h2>
                   <div className="text-[11px] text-slate-400 leading-relaxed space-y-3">
-                    <p>Welcome to the React PDF Hub SDK. This component empowers users to fill out, build, and view sophisticated PDF forms directly in the browser.</p>
+                    <p>Welcome to the React Document Studio SDK. This component empowers users to fill out, build, and view sophisticated PDF forms directly in the browser.</p>
                     <p><strong>To start:</strong> Use the right sidebar in the builder to add absolute-positioned form fields to your document layout.</p>
                   </div>
                 </section>
@@ -100,7 +100,7 @@ export default function App() {
                   <div className="text-[11px] text-slate-400 leading-relaxed space-y-3">
                     <p>The library provides headless hooks and a fully encapsulated UI:</p>
                     <code className="block bg-black/40 p-2 rounded border border-white/5 font-mono text-[10px] text-indigo-300">
-                      import {'{ PDFHub, usePDFHub }'} from 'react-pdf-hub';
+                      import {'{ DocumentStudio, useDocumentStudio }'} from '@groupsum/document-studio';
                     </code>
                   </div>
                 </section>
@@ -189,7 +189,7 @@ interface FormField {
 
         {/* Center: Showcase component */}
         <section className="flex-1 flex flex-col relative bg-[#14161B] min-w-[500px]">
-          <PDFHub onAction={handleAction} />
+          <DocumentStudio onAction={handleAction} />
         </section>
       </main>
     </div>

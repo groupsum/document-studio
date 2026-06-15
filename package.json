@@ -1,7 +1,7 @@
 {
-  "name": "groupsum-docmaker-sdk-workspace",
+  "name": "document-studio-workspace",
   "version": "0.1.0",
-  "description": "SSOT-governed Groupsum Docmaker SDK component workspace.",
+  "description": "SSOT-governed Groupsum Document Studio component workspace.",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.15.4",
